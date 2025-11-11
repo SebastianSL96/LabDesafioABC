@@ -61,3 +61,49 @@ h3 {
   font-weight: 600;
   margin-top: 10px;
 }
+
+/* Contenedor general de filas */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 80%;
+  max-width: 900px;
+  margin: 15px 0;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Efecto cuando pasas el mouse */
+.row:hover {
+  transform: scale(1.05);
+}
+
+/* Columnas del texto y de la imagen */
+.col-4 {
+  flex: 1;
+  text-align: center;
+}
+
+.col-8 {
+  flex: 1;
+  text-align: center;
+}
+
+/* Títulos */
+.display-1 {
+  font-size: 3rem;
+  color: #5d5de3;
+  margin: 0;
+}
+
+/* Líneas <hr> invisibles o suaves */
+hr {
+  border: none;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  width: 80%;
+}
