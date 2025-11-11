@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Abecedario A-E</title>
+</head>
+<body>
+  <div class="contenedor">
+
+    <div class="tarjeta">
+      <h1>A</h1>
+      <h3>para Avión</h3>
+      <h5>Haz clic para cambiar colores</h5>
+      <img src="https://2.bp.blogspot.com/-nLKLxVywAHo/UC23NIQeKPI/AAAAAAABD80/iAsk-eZ3h3Q/s1600/avion-de-pasajeros-en-el-cielo-azul-Passenger%2Bairliner%2Bflight%2Bin%2Bthe%2Bblue%2Bsky.jpg" width="150" alt="avion volando">
+    </div>
+
+    <div class="tarjeta">
+      <h1>B</h1>
+      <h3 class="azul">para Barco</h3>
+      <h5>Haz clic para cambiar colores</h5>
+      <img src="https://image.freepik.com/vector-gratis/barco-de-dibujos-animados-con-agua_49499-111.jpg" width="150" alt="barco polaco">
+    </div>
+
+    <div class="tarjeta">
+      <h1>C</h1>
+      <h3 class="azul">para Casa</h3>
+      <h5>Haz clic para cambiar colores</h5>
+      <img src="https://tse2.mm.bing.net/th/id/OIP.xjaGlEbVHRru3ahN-1H9SgHaGN?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" width="150" alt="casaurbana">
+    </div>
+
+    <div class="tarjeta">
+      <h1>D</h1>
+      <h3 class="azul">para Dado</h3>
+      <h5>Haz clic para cambiar colores</h5>
+      <img src="https://tse4.mm.bing.net/th/id/OIP.k2R8ERkiJeHON2gb6iiLKgHaHa?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" width="150" alt="dado de lado">
+    </div>
+
+    <div class="tarjeta">
+      <h1>E</h1>
+      <h3 class="rojo">para Elefante</h3>
+      <h5>Haz clic para cambiar colores</h5>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg" width="150" alt="elefante africano">
+      
+    </div>
+
+  </div>
+
+  <script>
+    // Colores disponibles
+    const colores = ["green", "blue", "red"];
+
+    // Función para obtener un color aleatorio de la lista
+    function colorAleatorio() {
+      return colores[Math.floor(Math.random() * colores.length)];
+    }
+
+    // Función que cambia 3 colores al azar (verde, azul, rojo)
+    function cambiarColores(elemento) {
+      let colorFondo = colorAleatorio();
+      let colorTexto = colorAleatorio();
+      let colorBorde = colorAleatorio();
+      elemento.style.backgroundColor = colorFondo;
+      elemento.style.color = colorTexto;
+      elemento.style.borderColor = colorBorde;
+    }
+
+    // Agregar evento a todos los h5
+    document.querySelectorAll("h5").forEach(h5 => {
+      h5.addEventListener("click", () => cambiarColores(h5.parentElement));
+    });
+  </script>
+</body>
+</html>
