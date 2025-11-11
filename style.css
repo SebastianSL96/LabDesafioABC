@@ -38,3 +38,26 @@ h5 {
   color: black;
   font-size: 0.9em;
 }
+
+img {
+  width: 250px;      /* Ancho fijo */
+  height: 200px;     /* Alto fijo */
+  object-fit: cover; /* Mantiene la proporción recortando si es necesario */
+  border-radius: 10px; /* Bordes suaves */
+  display: block;    /* Permite centrarlas */
+  margin: 10px auto; /* Centra horizontalmente */
+}
+/* Título principal (letras F, G, H, etc.) */
+h1 {
+  font-size: 80px;          /* Mucho más grande */
+  color: #b556f0;           /* Lila oscuro elegante */
+  margin: 0;
+  font-family: 'Century Gothic', sans-serif; /* Letra linda y clara */
+}
+/* Subtítulo ("For Foca", "For Gato"...) */
+h3 {
+  font-size: 24px;
+  color: #f1d118;
+  font-weight: 600;
+  margin-top: 10px;
+}
