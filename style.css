@@ -1,3 +1,44 @@
+body {
+  background-color: gray;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.tarjeta {
+  border: 3px solid black;
+  padding: 15px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+h3 {
+  color: green;
+}
+
+.azul {
+  color: blue;
+}
+
+.rojo {
+  color: rgb(156, 35, 35);
+}
+
+h5 {
+  cursor: pointer;
+  color: black;
+  font-size: 0.9em;
+}
+
 img {
   width: 250px;      /* Ancho fijo */
   height: 200px;     /* Alto fijo */
@@ -5,13 +46,6 @@ img {
   border-radius: 10px; /* Bordes suaves */
   display: block;    /* Permite centrarlas */
   margin: 10px auto; /* Centra horizontalmente */
-}
-/* Fondo general suave */
-body {
-  font-family: 'Poppins', sans-serif; /* Letra moderna y redondeada */
-  background-color: #f8f5fc; /* Lila muy suave */
-  margin: 0;
-  padding: 20px;
 }
 /* Título principal (letras F, G, H, etc.) */
 h1 {
