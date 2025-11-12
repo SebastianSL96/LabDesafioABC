@@ -1,5 +1,5 @@
 body {
-  background-color: gray;
+  background-color: rgb(231, 229, 229);
   font-family: Arial, sans-serif;
   text-align: center;
 }
@@ -10,33 +10,6 @@ body {
   justify-content: center;
   gap: 20px;
   padding: 20px;
-}
-
-.tarjeta {
-  border: 3px solid black;
-  padding: 15px;
-  width: 200px;
-  border-radius: 10px;
-  background-color: white;
-  transition: 0.3s;
-}
-
-h3 {
-  color: green;
-}
-
-.azul {
-  color: blue;
-}
-
-.rojo {
-  color: rgb(156, 35, 35);
-}
-
-h5 {
-  cursor: pointer;
-  color: black;
-  font-size: 0.9em;
 }
 
 img {
@@ -100,46 +73,3 @@ h3 {
   color: #5d5de3;
   margin: 0;
 }
-
-/* Líneas <hr> invisibles o suaves */
-hr {
-  border: none;
-  border-top: 2px solid rgba(255, 255, 255, 0.2);
-  width: 80%;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-.abecedario {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-}
-.letra-card {
-  border: 2px solid #ccc;
-  padding: 16px;
-  border-radius: 12px;
-  width: 150px;
-  box-shadow: 2px 2px 8px #eee;
-  transition: background .3s, color .3s;
-  cursor: pointer;
-}
-.letra {
-  font-size: 2em;
-  font-weight: bold;
-  display: block;
-}
-
-img {
-  width: 250px;      /* Ancho fijo */
-  height: 200px;     /* Alto fijo */
-  object-fit: cover; /* Mantiene la proporción recortando si es necesario */
-  border-radius: 10px; /* Bordes suaves */
-  display: block;    /* Permite centrarlas */
-  margin: 10px auto; /* Centra horizontalmente */
-}
-
-
