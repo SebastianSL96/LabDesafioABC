@@ -107,3 +107,39 @@ hr {
   border-top: 2px solid rgba(255, 255, 255, 0.2);
   width: 80%;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.abecedario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.letra-card {
+  border: 2px solid #ccc;
+  padding: 16px;
+  border-radius: 12px;
+  width: 150px;
+  box-shadow: 2px 2px 8px #eee;
+  transition: background .3s, color .3s;
+  cursor: pointer;
+}
+.letra {
+  font-size: 2em;
+  font-weight: bold;
+  display: block;
+}
+
+img {
+  width: 250px;      /* Ancho fijo */
+  height: 200px;     /* Alto fijo */
+  object-fit: cover; /* Mantiene la proporción recortando si es necesario */
+  border-radius: 10px; /* Bordes suaves */
+  display: block;    /* Permite centrarlas */
+  margin: 10px auto; /* Centra horizontalmente */
+}
+
+
